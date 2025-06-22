@@ -1,0 +1,111 @@
+body{
+    background-color: lightgreen;
+    font-family: Arial;
+}
+
+header{
+    margin: 0 auto 20px;
+    width: 85%;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.425);
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 22px; 
+    font-weight: bolder;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    margin: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(3, 53, 3);
+    background-color: rgba(98, 185, 98, 0.842);
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(3, 53, 3);
+    background-color: rgb(38, 131, 38);
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#about{
+    h2{
+        font-size: 25px;
+        color: rgb(16, 48, 22);
+        text-decoration: underline;
+    }
+    background-color: rgba(65, 192, 65, 0.404);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    width: 80%;
+    font-size: 18px;
+    color: rgb(3, 53, 3);
+}
+
+#projects{
+     h2{
+        font-size: 25px;
+        color: rgb(16, 48, 22);
+        text-decoration: underline;
+    }
+    h3{
+        font-size: 20px;
+        color: rgb(16, 48, 22);
+        margin-bottom: 5px;
+    }
+    background-color: rgba(65, 192, 65, 0.404);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    width: 80%;
+    font-size: 18px;
+    color: rgb(3, 53, 3);
+}
+
+img{
+    width: 30%;
+    display:inline;
+    margin: 5px auto;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+#contact{
+     h2{
+        font-size: 25px;
+        color: rgb(16, 48, 22);
+        text-decoration: underline;
+    }
+    background-color: rgba(65, 192, 65, 0.404);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    width: 80%;
+    font-size: 18px;
+    color: rgb(3, 53, 3);
+}
+
+footer{
+    text-align: center;
+    color: rgb(3, 53, 3);
+    font-weight: lighter;
+}
