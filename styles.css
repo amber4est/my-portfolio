@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: lightgreen;
     font-family: Arial;
@@ -7,31 +13,37 @@ body{
 header{
     margin: 0 auto 20px;
     width: 100%;
-    top: 0;
     text-align: center;
     background-color: rgba(0, 128, 0, 0.425);
     color: white;
     border: 1px solid green;
-    padding: 2px;
+    padding: 25px;
     font-weight: bolder;
     box-shadow: 4px 4px 4px green;
     h1{
         text-shadow: 4px 4px 4px green;
         line-height: 24px;
+        padding: 15px;
+        margin-bottom: 15px;
     }
+}
+
+nav, nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li{
     list-style: none;
-    display: inline-flex;
+    display: inline;
 }
 
 nav ul li a{
     margin: 2px;
     line-height: 20px;
     font-weight: bold;
-    text-align: center;
-    color: rgb(3, 53, 3);
+    color: white;
     background-color: rgba(98, 185, 98, 0.842);
     padding: 10px;
     padding-left: 50px;
@@ -43,13 +55,16 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: rgb(3, 53, 3);
-    background-color: rgb(38, 131, 38);
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    text-decoration: underline;
-    box-shadow: 1px 1px 1px white;
+    background-color: green;
+    box-shadow: 0 0 8px green;
+    border-color: white;
+    border: 2px;
+    border-radius: 8px;
+    color: white;   
+    text-decoration: none;
 }
 
 section{
@@ -62,20 +77,26 @@ section{
     font-size: 18px;
     color: rgb(3, 53, 3);
     box-shadow: 4px 4px 4px green;
-     
 }
 
 h2{
         font-size: 25px;
         color: rgb(16, 48, 22);
         text-decoration: underline;
+        padding: 10px;
+        padding-left: 0px;
+        margin: 3px;
     }
 
 #projects{
     h3{
         font-size: 20px;
         color: rgb(16, 48, 22);
+        margin: 1px;
+        margin-left: 0px;
         margin-bottom: 5px;
+        padding: 5px;
+        padding-left: 1px;
     }
 }
 
@@ -83,6 +104,17 @@ h2{
     h3{
         font-size: 18px;
         color: rgb(16, 48, 22);
+        padding: 10px;
+        padding-left: 0px;
+        margin: 3px;
+        margin-left: 0px;
+    }
+}
+
+#contact{
+    p{
+        padding: 5px;
+        margin: 2px;
     }
 }
 
@@ -97,9 +129,8 @@ img, video{
 
 audio{
     width: 30%;
-    display:inline-flex;
-    margin-top: -5px;
-    margin-bottom: 0px;
+    display:inline;
+    margin: 1px;
 }
 
 a{
@@ -113,20 +144,92 @@ a:hover{
 }
 
 footer{
-    position: fixed;
-    width: 100%;
-    color: white;
-    font-weight: lighter;
-    bottom: 0;
-    text-align: center;
     background-color: rgba(0, 128, 0, 0.425);
-    padding: 1px;
+    padding: 18px;
+    margin: 2px;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.detailsButton{
+    width: 30%;
+    padding: 10px;
+    padding-left: 0;
+    margin: 10px;
+    margin-left: 0;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    color: green;
+    font-size: 15px;
+}
+
+.detailsButton:hover, .submitButton:hover{
+    background-color: green;
+    box-shadow: 0 0 8px green;
+    border-color: white;
+    border: 2px;
+    border-radius: 8px;
+    color: white;   
+}
+
+.contactForm{
+    h3{
+        padding: 10px;
+        padding-left: 2px;
+        margin: 5px;
+        margin-left: 0px;
+        margin-bottom: 2px;
+    }
+    width: 60%;
+    background-color: rgba(179, 248, 173, 0.897);
+    padding: 15px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    border-radius: 5px;
+    border: 1px solid green;
+    box-shadow: 3px 3px 2px green;
+}
+.contactForm input, .contactForm textarea{
+    margin: 5px;
+    margin-left: 0px;
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.contactForm label{
+    padding: 15px;
+    padding-left: 2px;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.submitButton{
+    width: 30%;
+    padding: 12px;
+    margin: 10px;
+    margin-left: 0;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    color: green;
+    font-size: 17px;
 }
 
 @media (max-width: 600px){
     nav ul li{
-        display: block-flex;
-        padding: 1px;
+        display:inline-block;
+        padding: 12px;
+        padding-left: 0px;
+        padding-right: 0px;
         margin: 1px;
     }
 
@@ -138,6 +241,14 @@ footer{
 
     audio{
         display: flex;
+        width: 100%;
+    }
+
+    .detailsButton, .submitButton{
+        width: 100%;
+    }
+
+    .contactForm{
         width: 100%;
     }
 }

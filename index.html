@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amber Forrest's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Amber Forrest</h1>
-        
+  
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -43,29 +44,59 @@
             <source src="theoVideo.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
-        <p>Please pretend this is a wonderful description about project number one. Please pretend this is
-            further details and information about project number one.
-        </p>
+        <br>
+        <button class="detailsButton">Show Details</button>
+            <div class="project-details" style="display: none;">
+                <p>Please pretend this is a wonderful description about project number one. Please pretend this is further details and information about project number one.</p>
+            </div>
 
         <h3>Project Number Two</h3>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwfYv8YZpZyuyXXbbTIBaW5hGyGufbvaA-Q&s" 
         alt="This is a picture of project two" width="20%">
-        <p>Please pretend this is a wonderful description about project number two. Please pretend this is
-            further details and information about project number two.
-        </p>
+        <br>
+        <button class="detailsButton">Show Details</button>
+            <div class="project-details" style="display: none;">
+                <p>Please pretend this is a wonderful description about project number two. Please pretend this is further details and information about project number two.</p>
+            </div>
 
         <h3>Project Number Three</h3>
         <img src="https://www.codecademy.com/resources/blog/wp-content/uploads/2022/12/programming-languages.png" 
         alt="This is a picture of project three" width="20%">
-        <p>Please pretend this is a wonderful description about project number three. Please pretend this is
-            further details and information about project number three.
-        </p>
+        <br>
+        <button class="detailsButton">Show Details</button>
+            <div class="project-details" style="display: none;">
+                <p>Please pretend this is a wonderful description about project number three. Please pretend this is further details and information about project number three.</p>
+            </div>
     </section>
 
     <section id="contact">
-    <h2>Contact Information</h2>
-    <p>Email: <a href="mailto:amber4est@gmail.com">amber4est@gmail.com</a></p>
-    <p>Github: <a href="https://github.com/amber4est">amber4est</a></p>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:amber4est@gmail.com">amber4est@gmail.com</a></p>
+        <p>Github: <a href="https://github.com/amber4est">amber4est</a></p>
+        <br>
+
+        <form action="#" class="contactForm" id="contactForm">
+            <h3>Send me a message:</h3>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
+            <br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError"></span>
+            <br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows=3></textarea>
+            <span class="error" id="messageError"></span>
+            <br>
+
+            <button type="submit" class="submitButton">Send Message</button>
+
+            <p id="successMessage" class="success"></p>
+        </form>
     </section>
    
     <footer>
