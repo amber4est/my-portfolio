@@ -79,3 +79,12 @@ function validateEmail(email){
     const re = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     return re.test(String(email));
 }
+
+//Typed.js
+const intro=new Typed ("#intro",{
+    strings: ["Welcome to my Portfolio!", "I am Amber!", "Check out my projects below!", "Thanks for viewing!"],
+    typeSpeed: 60,
+    backSpeed: 40,
+    fadeOut: true,
+    loop: true,
+});
