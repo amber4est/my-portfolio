@@ -88,3 +88,38 @@ const intro=new Typed ("#intro",{
     fadeOut: true,
     loop: true,
 });
+
+//Slide Show Photos in About Me Section
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+const next = document.querySelector(".next");
+const previous = document.querySelector(".previous")
+
+function showSlides(i) {
+  if (i >= slides.length)
+    {slideIndex = 0}; //go back to first slide at end
+  if (i < 0)
+    {slideIndex = slides.length - 1}; //go to last slide if previous is clicked at start
+
+  slides.forEach(slide => slide.style.display = "none"); //hides other slides
+  slides[slideIndex].style.display = "block"; //shows current slide
+}
+
+next.addEventListener("click", function() {
+  slideIndex++;
+  showSlides(slideIndex);
+}); 
+
+previous.addEventListener("click", function() {
+  slideIndex--;
+  showSlides(slideIndex);
+});
+
+function autoSlide() {
+  slideIndex++;
+  showSlides(slideIndex);
+  setTimeout(autoSlide, 2000);
+}
+
+showSlides(slideIndex);
+autoSlide();
