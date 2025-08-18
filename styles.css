@@ -1,16 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: lightgreen;
     font-family: Arial;
     margin: 0;
 }
 
-header{
+header {
     margin: 0 auto 20px;
     width: 100%;
     text-align: center;
@@ -20,13 +20,13 @@ header{
     padding: 25px;
     font-weight: bolder;
     box-shadow: 4px 4px 4px green;
-    h1{
+    h1 {
         text-shadow: 4px 4px 4px green;
         line-height: 24px;
         padding: 15px;
         margin-bottom: 15px;
     }
-    h1 #intro{
+    h1 #intro {
         padding: 10px;
     }
 }
@@ -50,7 +50,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
@@ -63,7 +63,7 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-section{
+section {
     background-color: rgba(65, 192, 65, 0.404);
     border: 0.5px solid green;
     border-radius: 20px;
@@ -75,7 +75,7 @@ section{
     box-shadow: 4px 4px 4px green;
 }
 
-h2{
+h2 {
     font-size: 25px;
     color: rgb(16, 48, 22);
     text-decoration: underline;
@@ -83,8 +83,11 @@ h2{
     padding-left: 0px;
     margin: 3px;
 }
-.projects{
-    h3{
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
         font-size: 25px;
         color: rgb(16, 48, 22);
         margin-bottom: 5px;
@@ -96,14 +99,9 @@ h2{
         background-color: rgba(0, 128, 0, 0.425);
     }
 }
-.projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-#about{
-    h3{
+#about {
+    h3 {
         font-size: 18px;
         color: rgb(16, 48, 22);
         padding: 10px;
@@ -113,7 +111,7 @@ h2{
     }
 }
 
-#contact{
+#contact {
     p{
         padding: 5px;
         margin: 2px;
@@ -128,23 +126,23 @@ img {
     border: 2px solid white;
 }
 
-audio{
+audio {
     width: 80%;
     display:inline;
     margin: 1px;
 }
 
-a{
+a {
   color: rgb(3, 53, 3);
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: rgba(10, 131, 10, 0.596);
   text-decoration: underline;
 }
 
-footer{
+footer {
     background-color: rgba(0, 128, 0, 0.425);
     padding: 18px;
     margin: 2px;
@@ -156,12 +154,10 @@ footer{
     width: 100%;
 }
 
-.detailsButton{
-    width: 30%;
+.detailsButton {
+    width: 20%;
     padding: 10px;
-    padding-left: 0;
-    margin: 10px;
-    margin-left: 0;
+    margin-bottom: 10px;
     background-color: white;
     border: none;
     border-radius: 8px;
@@ -169,7 +165,7 @@ footer{
     font-size: 15px;
 }
 
-.detailsButton:hover, .submitButton:hover{
+.detailsButton:hover, .submitButton:hover {
     background-color: green;
     box-shadow: 0 0 8px green;
     border-color: white;
@@ -178,8 +174,8 @@ footer{
     color: white;   
 }
 
-.contactForm{
-    h3{
+.contactForm {
+    h3 {
         padding: 10px;
         padding-left: 2px;
         margin: 5px;
@@ -195,6 +191,7 @@ footer{
     border: 1px solid green;
     box-shadow: 3px 3px 2px green;
 }
+
 .contactForm input, .contactForm textarea{
     margin: 5px;
     margin-left: 0px;
@@ -206,14 +203,14 @@ footer{
     border: 1px solid green;
 }
 
-.contactForm label{
+.contactForm label {
     padding: 15px;
     padding-left: 2px;
     margin: 20px;
     margin-left: 0px;
 }
 
-.submitButton{
+.submitButton {
     width: 30%;
     padding: 12px;
     margin: 10px;
@@ -225,7 +222,7 @@ footer{
     font-size: 17px;
 }
 
-.about{
+.about {
     display: flex;
     gap: 20px;
 }
