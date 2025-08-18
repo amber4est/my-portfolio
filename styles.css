@@ -245,13 +245,13 @@ footer {
     max-width: 400px;
     height: 300px;
     position: relative;
-    overflow: hidden;
     border: 2px solid white;
     border-radius: 8px;
     box-shadow: 3px 3px 2px green;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .slides img {
@@ -434,9 +434,9 @@ body.darkMode .detailsButton:hover, body.darkMode #showFormButton:hover, body.da
     color: white;
     border-radius: 5px;
     border: 1px solid white;
-    position: fixed;
-    top: 5px;
-    right: 10px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 body.darkMode #darkMode {
@@ -458,31 +458,394 @@ body.darkMode a:hover {
   color: white;
 }
 
-@media (max-width: 600px){
-    nav ul li{
-        display:inline-block;
+/* media adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: inline-block;
         padding: 12px;
-        padding-left: 0px;
-        padding-right: 0px;
         margin: 1px;
     }
 
-    img{
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    img {
         display: flex;
         width: 100%;
         height: auto;
+        margin-bottom: 15px;
     }
 
-    audio{
+    audio {
+        width: 100%;
+    }
+
+    .detailsButton, .submitButton, .filterButton, .skill, #showFormButton {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactForm {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contactForm input, .contactForm textarea {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #darkMode {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    .projects h3 {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .slides, .about-words {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .skills, .filterButtons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 12px;
+        margin: 1px;
+    }
+
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    img {
         display: flex;
         width: 100%;
+        height: auto;
+        margin-bottom: 15px;
     }
 
-    .detailsButton, .submitButton{
+    audio {
         width: 100%;
     }
 
-    .contactForm{
+    .detailsButton, .submitButton, .filterButton, .skill, #showFormButton {
+        text-align: center;
         width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactForm {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contactForm input, .contactForm textarea {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #darkMode {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    .projects h3 {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .slides, .about-words {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .skills, .filterButtons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 12px;
+        margin: 1px;
+    }
+
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    img {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .detailsButton, .submitButton, .filterButton, .skill, #showFormButton {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactForm {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contactForm input, .contactForm textarea {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #darkMode {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    .projects h3 {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .slides, .about-words {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .skills, .filterButtons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul li {
+        display: inline-block;
+        margin: 1px;
+    }
+
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    img {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .detailsButton, .submitButton, .filterButton, .skill, #showFormButton {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactForm {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contactForm input, .contactForm textarea {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #darkMode {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    .projects h3 {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .slides, .about-words {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .skills, .filterButtons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    img {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .detailsButton, .submitButton, .filterButton, .skill, #showFormButton {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contactForm {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contactForm input, .contactForm textarea {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    #darkMode {
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+
+    .projects h3 {
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .slides, .about-words {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .skills, .filterButtons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
     }
 }
