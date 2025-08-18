@@ -83,6 +83,7 @@ h2 {
     padding-left: 0px;
     margin: 3px;
 }
+
 .projects {
     display: flex;
     flex-direction: column;
@@ -154,7 +155,15 @@ footer {
     width: 100%;
 }
 
-.detailsButton, #showFormButton {
+.filterButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    padding: 10px;
+}
+
+.detailsButton, #showFormButton, .filterButton {
     width: 20%;
     padding: 10px;
     margin-bottom: 10px;
@@ -165,7 +174,7 @@ footer {
     font-size: 15px;
 }
 
-.detailsButton:hover, .submitButton:hover, #showFormButton:hover {
+.detailsButton:hover, .submitButton:hover, #showFormButton:hover, .filterButton:hover {
     background-color: green;
     box-shadow: 0 0 8px green;
     border-color: white;

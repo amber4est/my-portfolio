@@ -137,3 +137,22 @@ showFormButton.addEventListener("click", function() {
       showFormButton.textContent = "Contact Me Form";
   }
 });
+
+//Filter Buttons in Project Section
+const filterButtons = document.querySelectorAll(".filterButton");
+const projects = document.querySelectorAll(".projects");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", function() {
+    const category = button.textContent;
+    
+    projects.forEach(project => {
+      if (category == "All" || project.classList.contains(category)) {
+        project.style.display = "flex";
+      }
+      else {
+        project.style.display = "none";
+      }
+    });
+  });
+});
