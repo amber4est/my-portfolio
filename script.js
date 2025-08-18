@@ -123,3 +123,17 @@ function autoSlide() {
 
 showSlides(slideIndex);
 autoSlide();
+
+//Hide/Show Contact Form
+const showFormButton = document.getElementById("showFormButton");
+
+showFormButton.addEventListener("click", function() {
+  if (contactForm.style.display == "none" || contactForm.style.display == "") {
+    contactForm.style.display = "block";
+    showFormButton.textContent = "Hide Contact Form";
+  }
+  else {
+      contactForm.style.display = "none";
+      showFormButton.textContent = "Contact Me Form";
+  }
+});
