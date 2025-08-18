@@ -450,6 +450,14 @@ body.darkMode .slides {
     box-shadow: 3px 3px 2px gray;
 }
 
+body.darkMode a {
+  color: grey;
+}
+
+body.darkMode a:hover {
+  color: white;
+}
+
 @media (max-width: 600px){
     nav ul li{
         display:inline-block;
