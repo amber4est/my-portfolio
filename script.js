@@ -145,14 +145,25 @@ const projects = document.querySelectorAll(".projects");
 filterButtons.forEach(button => {
   button.addEventListener("click", function() {
     const category = button.textContent;
+
+    let visibleProject = null; 
     
     projects.forEach(project => {
       if (category == "All" || project.classList.contains(category)) {
         project.style.display = "flex";
+        
+        if (visibleProject == null) {
+          visibleProject = project;
+        }
       }
       else {
         project.style.display = "none";
       }
     });
+    
+    if (visibleProject !== null) {
+      visibleProject.scrollIntoView({behavior: "smooth"});
+    }
+    
   });
 });
