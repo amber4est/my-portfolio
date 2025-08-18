@@ -167,3 +167,18 @@ filterButtons.forEach(button => {
     
   });
 });
+
+//Dark Mode/Light Mode
+const darkMode = document.getElementById("darkMode");
+
+darkMode.addEventListener("click", function() {
+  document.body.classList.toggle("darkMode");
+
+  if(document.body.classList.contains("darkMode")){
+    darkMode.textContent = "Light Mode";
+  }
+  else {
+    darkMode.textContent = "Dark Mode";
+  }
+
+});
