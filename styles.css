@@ -336,6 +336,10 @@ footer {
     border: 2px solid white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (max-width: 600px){
     nav ul li{
         display:inline-block;
