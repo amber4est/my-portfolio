@@ -445,6 +445,11 @@ body.darkMode #darkMode {
     border: 1px solid white;
 }
 
+body.darkMode .slides {
+    border: 2px solid grey;
+    box-shadow: 3px 3px 2px gray;
+}
+
 @media (max-width: 600px){
     nav ul li{
         display:inline-block;
@@ -454,7 +459,7 @@ body.darkMode #darkMode {
         margin: 1px;
     }
 
-    video, img{
+    img{
         display: flex;
         width: 100%;
         height: auto;
